@@ -1,8 +1,13 @@
+# Helpful links 
+
+
+Here is the url to the __stat 545 bhomepge__ repo: 
+
 # STAT545-participation
 
-https://github.com/forouh/STAT545-participation/edit/master/README.md
+[stat545 participation] (https://github.com/forouh/STAT545-participation/edit/master/README.md)
 
-The URL to classroom 
+The URL to _classroom_  
 
 https://github.com/STAT545-UBC/Classroom
 
