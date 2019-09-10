@@ -1,0 +1,24 @@
+---
+title:" tibble exploration"
+output: 
+  html_document
+  toc: TRUE 
+  number_section: TRUE 
+  theme: cerulean 
+---
+```{r load, warning = FALSE, echo = FALSE}
+library(tibble)
+library(gapminder)
+library(DT)
+```
+##print out gapminder data
+
+
+```{r}
+gapminder
+```
+convert mtcars to a tibble & warap in data table 
+```{r}
+datatable(as_tibble(mtcars))
+```
+
