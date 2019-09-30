@@ -13,7 +13,7 @@ Begin by loading the required packages. If you don't have these installed (or do
 ```
 install.packages("tidyverse")
 install.packages("scales")
-install.packages("tsibble")
+install.packages("tsibble
 ```
 
 Now run this code chunk to load the packages:
