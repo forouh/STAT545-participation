@@ -1,0 +1,51 @@
+---
+title: "cm11"
+output: html_document
+---
+```{r}
+library(gapminder)
+library(tidyverse)
+library(here)
+```
+
+### 11.3 Writing data to disk (10 mins)
+
+```{r} 
+# Let’s first load the built-in gapminder dataset and the tidyverse: Next, let’s filter the data only from 2007 and only in the Asia continent and save it to a variable
+
+gap_asia_2007 <- gapminder %>% filter(year == 2007, continent == "Asia")
+gap_asia_2007
+```
+
+
+```{r}
+# We can write this to a comma-separated value (csv) file with just one command
+write_csv(gap_asia_2007,"exported_file.csv")
+```
+
+
+
+
+```{r}
+# create a new folder “data” and within it a subfolder called “cm011_data”, specify here() and then save a file to that location with these commands:
+write_csv(gap_asia_2007,here("cm011_data","data","exported_file.csv"))
+```
+
+
+```{r}
+# The same csv file that we just saved to disk can be imported into R again by specifying the path where it exists
+read_csv(here("cm011_data","data","exported_file.csv"))
+```
+
+### 11.6 Import a file from the web/cloud
+### 11.6.1 Import a csv file from the internet
+```{r}
+# To import a csv file from a web, assign the URL to a variable
+
+
+url <- "http://gattonweb.uky.edu/sheather/book/docs/datasets/magazines.csv"
+
+# and then apply read_csv file to the url.
+read_csv(url)
+```
+
